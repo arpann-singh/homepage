@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 17, 58);
+}
+
+nav {
+  width: 90%;
+  height: 10vh;
+  background-image: linear-gradient(74deg, rgb(43, 42, 115) 0%, rgb(48, 48, 107) 21%, rgb(43, 42, 113) 36%, rgb(34, 33, 91) 51%, rgb(49, 48, 119) 70%, rgb(24, 24, 65) 100%);
+  margin-left: -1px;
+  /* Compensate for the border */
+  margin-right: -1px;
+  /* Compensate for the border */
+  padding-left: 1px;
+  /* Compensate for the border */
+  padding-right: 1px;
+  /* Compensate for the border */
+  border: 0.5px solid rgb(29, 25, 87);
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 3%;
+  box-shadow: 2px 2px 8px rgb(0, 3, 31);
+}
+nav .nav-items {
+  height: inherit;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-items .logo {
+  font-size: 1.5rem;
+  color: white;
+}
+nav .nav-items ul {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+nav .nav-items ul li {
+  list-style: none;
+}
+nav .nav-items ul li a {
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 2px 5px;
+  text-decoration-line: none;
+  color: white;
+}
+nav .nav-items .options {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  gap: 1rem;
+}
+nav .nav-items .options .bell img {
+  width: 15px;
+}
+nav .nav-items .options .option {
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 2px 5px;
+}
+
+.line {
+  border-bottom: 3px solid rgb(25, 25, 83);
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.container-class {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2% 5%;
+}
+.container-class .classes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container-class .classes .block {
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5%;
+  color: white;
+  max-width: 350px;
+  margin: auto;
+  min-height: 350px;
+  box-shadow: 4px 4px 8px rgb(2, 0, 34);
+}
+.container-class .classes .block img {
+  width: 60%;
+  border-radius: 25px;
+  max-width: 160px;
+}
+.container-class .classes .block .title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.tags {
+  height: 5vh;
+  width: 100%;
+  margin-top: 1rem;
+}
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.tags ul li {
+  list-style: none;
+}
+.tags ul li a {
+  font-size: 1rem;
+  text-decoration-line: none;
+  color: rgb(207, 207, 207);
+}
+
+@media screen and (min-width: 600px) {
+  .nav-items ul {
+    display: flex;
+  }
+  .tags {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .nav-items ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+.connect-btn {
+  color: white;
+  background-color: rgb(43, 42, 115);
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.connect-btn:hover {
+  background-color: rgb(52, 51, 126);
+}
+
+.connect-btn:active {
+  background-color: rgb(33, 32, 91);
+}
